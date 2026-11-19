@@ -1,0 +1,29 @@
+﻿# Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Secrets
+.env
+.streamlit/secrets.toml
+
+# Datasets
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/demo_transactions.csv
+
+# Include trained model
+models/*
+!models/finrisk_random_forest.joblib
+
+# Reports
+reports/figures/*
+!reports/figures/*.png
+!reports/figures/.gitkeep
+
+# Backup frontends
+app_old.py
+app_v2_backup.py
