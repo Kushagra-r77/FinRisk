@@ -200,6 +200,34 @@ footer {
 #MainMenu {
     visibility: hidden;
 }
+footer {
+    visibility: hidden;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+/* Hide Streamlit's top header */
+header[data-testid="stHeader"] {
+    display: none !important;
+    height: 0 !important;
+}
+
+/* Hide the top decoration */
+[data-testid="stDecoration"] {
+    display: none !important;
+}
+
+/* Hide remaining toolbar */
+[data-testid="stToolbar"] {
+    display: none !important;
+}
+
+/* Adjust dashboard spacing */
+[data-testid="stMainBlockContainer"] {
+    padding-top: 1.5rem !important;
+}
 </style>
 """, unsafe_allow_html=True)
 
